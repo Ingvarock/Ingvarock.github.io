@@ -1,0 +1,101 @@
+.feedback {
+	padding: 133px 0 112px 0;
+	.container {
+		.feedback__title {
+			font-family: 'Montserrat Bold Italic';
+			font-size: 64px;
+			line-height: 102.4%;
+		}
+		.feedback__slider {
+			position: relative;
+			margin-top: 77px;
+			display: flex;
+			transition: 0.2s;
+			.slide {
+				margin: 0 20px 0 0;
+				.slider__link {
+					position: relative;
+					.slide__img {
+						width: 100%;
+					}
+					&:hover {
+						transition: 0.2s all ease;
+						opacity: 0.7;
+						&:before {
+							content:'';
+							opacity: 1;
+							position: absolute;
+							top: -150px;
+							left: 200px;
+							border-top: 40px solid transparent;
+							border-left: 65px solid $color_text;
+							border-bottom: 40px solid transparent;
+							z-index: 50;
+						}
+					}
+				}
+				.slide__title {
+					margin-top: 34px;
+					font-family: 'Montserrat Bold';
+					font-size: 18px;
+					line-height: 150.9%;
+				}
+				.slide__subtitle {
+					margin-top: 16px;
+					font-family: 'Montserrat Regular';
+					font-size: 14px;
+					line-height: 150.9%;
+					color: $clolr_text_darken;
+				}
+			}
+		}
+		.slider-feedback__navigation {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 62px;
+			.feedback-swiper-pagination {
+				width: 150px;
+				.swiper-pagination-bullet {
+					position: relative;
+					width: 19px;
+					height: 19px;
+					border: 1.5px solid $color-blue;
+					border-radius: 50%;
+				}
+			}
+			.feedback-swiper-button-prev {
+				cursor: pointer;
+				position: relative;
+				margin: 0 50px 0 0;
+				z-index: 50;
+				width: 17.5px;
+				height: 17px;
+				border: none;
+				border-top: 3px solid $color-blue;
+				border-right: 3px solid $color-blue;
+				background: inherit;
+				transform: rotate(-135deg);
+			}
+			.feedback-swiper-button-next {
+				cursor: pointer;
+				position: relative;
+				margin: 0 0 0 50px;
+				z-index: 50;
+				width: 17.5px;
+				height: 17px;
+				border: none;
+				border-top: 3px solid $color-blue;
+				border-right: 3px solid $color-blue;
+				background: inherit;
+				transform: rotate(45deg);
+			}
+		}
+	}
+	.feedback__btn-block {
+		margin-top: 91px;
+		display: flex;
+		justify-content: center;
+	}
+}

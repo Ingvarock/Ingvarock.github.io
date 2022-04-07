@@ -1,0 +1,116 @@
+.why-i {
+	margin-top: -20px;
+	padding: 169px 0 197px 0;
+	background: $bg_why-i;
+	display: flex;
+	justify-content: center;
+	.why-i__wrapper {
+		position: relative;
+		width: auto;
+		height: auto;
+		background: $bg_wrapper_why-i;
+		box-shadow: 31px 30px 63px rgba(0, 0, 0, 0.18);
+		border-radius: 20px;
+		.why-i__header {
+			margin: 50px 0 0 100px;
+			display: flex;
+			align-items: center;
+			.why-i__title {
+				width: 436px;
+				font-family: 'Montserrat Bold Italic';
+				font-size: 64px;
+				color: $color_text;
+				@media screen and (max-width: 682px) {
+					font-size: 24px;
+					margin: 0 0 0 50px;
+				}
+			}
+			.why-i__line {
+				margin: 0 0 0 127px;
+				width: 75%;
+				height: 5px;
+				background: rgba(255, 255, 255, 0.04);
+				@media screen and (max-width: 682px) {
+					display: none;
+				}
+			}
+			@media screen and (max-width: 682px) {
+				align-items: center;
+				justify-content: center;
+			}
+		}
+		.why-i__main {
+			position: relative;
+			margin: 30px 0 0 50px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			.why-i__card {
+				position: relative;
+				min-height: 92px;
+				margin: 20px 10px;
+				padding: 10px 10px;
+				max-width: 630px;
+				display: flex;
+				align-items: center;
+				background: linear-gradient(269.98deg, #212E3D -0.57%, #162029 99.98%);
+				border-radius: 72px;
+				z-index: 10;
+				.why-i__img {
+					margin: 0 47px 0 0;
+				}
+				.why-i__text {
+					position: relative;
+					font-family: 'Montserrat Regular';
+					font-size: 24px;
+					line-height: 102.4%;
+					color: $color_text;
+					@media screen and (max-width: 682px) {
+						font-size: 18px;
+					}
+					@media screen and (max-width: 484px) {
+						font-size: 18px;
+						width: 200px;
+					}
+				}
+				@media screen and (max-width: 1024px) {
+					background: linear-gradient(269.98deg, #222F3E -0.57%, #162029 99.98%);
+				}
+				@media screen and (max-width: 682px) {
+					width: 400px;
+				}
+				@media screen and (max-width: 484px) {
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: center;
+					padding: 0 50px;
+				}
+			}
+			.card__right {
+				background: linear-gradient(269.98deg, #0F141B -0.57%, #202C3B 99.98%);
+				@media screen and (max-width: 1024px) {
+					background: linear-gradient(269.98deg, #222F3E -0.57%, #162029 99.98%);
+				}
+			}
+			
+			@media screen and (max-width: 1024px) {
+				flex-direction: column;
+				align-items: center;
+			}
+			@media screen and (max-width: 682px) {
+				align-items: start;
+				padding: 15px;
+			}
+		}
+		.why-i__bg-img {
+			position: absolute;
+			top: -80px;
+			right: -120px;
+			// z-index: 30;
+			@media screen and (max-width: 1024px) {
+				transform: scale(-1, 1);
+				z-index: 1;
+			}
+		}
+	}
+}

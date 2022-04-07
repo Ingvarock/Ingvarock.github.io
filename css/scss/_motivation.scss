@@ -1,0 +1,70 @@
+.motivation {
+	margin-top: -20px;
+	padding: 105px 0 112px 0;
+	background: $bg_motivation;
+	.container {
+		.motivation__wrapper {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			justify-items: center;
+			align-items: center;
+			width: 100%;
+			height: auto;
+			@media screen and (max-width: 768px) {
+				grid-template-columns: 1fr;
+				justify-items: center;
+				align-items: center;
+				gap: 70px;
+			}
+			.motivation__text {
+				position: relative;
+				margin: 0 30px;
+				.motivation__title {
+					max-width: 502px;
+					font-family: 'Montserrat Bold Italic';
+					font-size: 36px;
+					line-height: 120.4%;
+					color: $color_text;
+					@media screen and (max-width: 425px) {
+						font-size: 24px;
+					}
+				}
+				.motivation__subtitle {
+					max-width: 427px;
+					font-size: 18px;
+					line-height: 152.4%;
+					font-family: 'Montserrat Regular';
+					color: $color_text_grey;
+					@media screen and (max-width: 425px) {
+						font-size: 14px;
+					}
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					width: 5px;
+					height: 200px;
+					left: -30px;
+					top: 35px;
+					background: $color-blue;
+				}
+				.motivation__img-adaptiv {
+					display: none;
+					position: absolute;
+					@media screen and (max-width: 768px) {
+						display: block;
+						right: 40px;
+						bottom: -60px;
+					}
+				}
+			}
+			.motivation__img {
+				width: 522.5px;
+				height: auto;
+				@media screen and (max-width: 768px) {
+					display: none;
+				}
+			}
+		}
+	}
+}
